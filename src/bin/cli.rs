@@ -10,22 +10,27 @@ struct Cli {
 
 #[derive(Subcommand)]
 enum Commands {
+    #[clap(aliases = &["a"])]
     Add {
         entry: Vec<String>,
     },
+    #[clap(aliases = &["u"])]
     Update {
         index: i32,
         entry: Vec<String>,
     },
+    #[clap(aliases = &["r", "rm"])]
     Remove {
         index: i32,
     },
+    #[clap(aliases = &["done", "c"])]
     Check {
         index: i32,
     },
     Uncheck {
         index: i32,
     },
+    #[clap(aliases = &["l", "ls"])]
     List {
         #[arg(short, long)]
         all: bool,

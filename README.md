@@ -1,5 +1,11 @@
 # My todolist app
 
+## Install
+
+```
+cargo install --git https://github.com/floufen/todo
+```
+
 ## Usage
 
 ### Adding

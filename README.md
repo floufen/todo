@@ -49,3 +49,9 @@ $ todo list
 ```
 $ todo remove <INDEX>
 ```
+
+### Updating
+
+```
+$ todo update <INDEX> new text
+```
